@@ -118,6 +118,14 @@ repositories {
     // flatDir {
     //     dir 'libs'
     // }
+    // Forge Maven repo (hosts the patched LWJGL natives)
+    maven {
+        name = "Forge"
+        url = "https://maven.minecraftforge.net"
+    }
+
+    // Maven Central as fallback
+    mavenCentral()
 }
 
 dependencies {
